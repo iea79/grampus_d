@@ -6,224 +6,24 @@
 //  ==========================
  */
 
+// Подключение примесей
 @import 'mixins/mixin';
-// Fonts
-// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900);
-// @import url(https://fonts.googleapis.com/css?family=Lora);
-@include font-face("Century Gothic", fonts/CenturyGothic, normal, normal);
-@include font-face("Century Gothic Bold", fonts/CenturyGothic, bold, normal);
-@include font-face("ArialMT", fonts/CenturyGothic, normal, normal);
 
+// Подключение шрифта
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900);
 
- // Import files
+// Подключение отдельных фалов стилей в общий css
 @import 'variables/variables';
 @import 'core/reset';
+@import 'core/template';
 @import 'core/form';
+@import 'core/column';
 @import 'core/grid';
+@import 'core/soc';
+@import 'core/header';
+@import 'core/breadcrumb';
+@import 'core/navbar';
+@import 'core/footer';
 
-
-// Elements color ==========================================================
-// Example for button 
-// --------------------------
-// for html - btn__primary, btn__success etc...
-// --------------------------
-// for scss 
-// .btn{
-// 	@each $status, $color in $el_bg_colors {
-// 		&__#{$status} {
-// 			background: $color;
-// 		}
-// 	}
-// }
-
-
-// End @mixin and variables
-
-
-// Main wrappers =====================================
-
-.wrapper {
-	font-size: $main_font_size;
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto (-$footer_height) auto; // отрицательный нижний отступ на высоту футера
-}
-
-.container_center {
-	max-width: $container_width;
-	padding: 0 15px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.column {
-	@include columns(4, 20px, 300px);
-}
-
-// Social link
-.soc {
-	float: left;
-	a {
-		display: inline-block;
-		width: 30px;
-		height: 30px;
-		border-radius: 50%;
-		background-color: #000;
-		text-align: center;
-		text-decoration: none;
-		@include trs(0.3s);
-		&:hover {
-			opacity: .8;
-		}
-		&:before {
-			content: 'soc';
-			color: #fff;
-			text-decoration: none;
-		}
-	}
-}
-
-.copy {
-	float: right;
-}
-
-// Breadcrumb ==================================================================
-.breadcrumb {
-	margin: 15px 0;
-	padding: 0;
-	li {
-		display: inline-block;
-		vertical-align: baseline;
-		&:not(:first-child) {
-			&:before {
-				content: '/';
-				display: inline-block;
-			}
-		}
-		&:last-child {
-			a {
-				cursor: default;
-				text-decoration: none;
-			}
-		}
-		
-		a {
-			font-size: 12px;
-		}
-	}
-}
-
-// Pagination ==================================================================
-.pagination {
-	margin: 25px 0;
-	padding: 0;
-	li {
-		display: inline-block;
-		a {
-			display: block;
-			text-align: center;
-		}
-		&.prev, &.next {
-			a {
-				&:before {					
-				}
-			}
-		}
-		&.prev {
-			a {
-				&:before {
-					content: '<';
-					
-				}
-			}
-		}
-		&.next {
-			a {
-				&:before {
-					content: '>';
-					
-				}
-			}
-		}
-	}
-}
-
-/* Header
- ----------------------------------------------------------------------------- */
-.header {
-	background-color: #ccc;
-	padding: 10px 0;
-	@extend %clear_a;
-}
-
-.logo {
-	background-color: #ddd;
-	float: left;
-	width: 150px;
-}
-
-// stiky menu
-.stiky {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-}
-
-/* Navbar
--------------------------------------------------------------------------------*/
-.navbar {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	text-align: right;
-	&__item {
-		display: inline-block;
-	}
-	&__link {}
-}
-
-/* Middle
- ----------------------------------------------------------------------------- */
-.main__content {
-	padding-bottom: $footer_height;
-	@extend %clear_a;
-}
-
-
-/* Footer
- ----------------------------------------------------------------------------- */
-.footer {
-	position: relative;
-	height: $footer_height;
-	background: #BFF08E;
-	@extend %clear_all;
-	.container_center {
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-}
-
-/* Responsive styles
------------------------------------------------------------------------------ */
-// max-width: 1200px ===========================================================
-@media (max-width: $breakpoint-xlarge) {
-}
-
-// max-width: 960px ===========================================================
-@media (max-width: $breakpoint-large) {
-	
-}
-
-// max-width: 760px ===========================================================
-@media (max-width: $breakpoint-medium) {
-	
-}
-
-// max-width: 480px ===========================================================
-@media (max-width: $breakpoint-small) {
-	
-}
 
 

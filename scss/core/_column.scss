@@ -1,0 +1,3 @@
+.column {
+	@include columns(4, 20px, 300px);
+}

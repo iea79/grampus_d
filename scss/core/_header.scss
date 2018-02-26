@@ -1,0 +1,19 @@
+/* Header
+ ----------------------------------------------------------------------------- */
+.header {
+	background-color: #ccc;
+	padding: 10px 0;
+	@extend %clear_a;
+	&__logo {
+		background-color: #ddd;
+		float: left;
+		width: 150px;
+	}
+	// Липкая шапка
+	&__stiky {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+}

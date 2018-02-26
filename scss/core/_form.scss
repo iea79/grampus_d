@@ -19,13 +19,12 @@ textarea {
 	border-radius: 5px;
 	@include trs(0.3s);
 	&:hover {
+		border: 1px solid $input_hover_border_color;
+		background-color: $input_hover_bg_color;;
 	}
 	&:focus {
-		border: 1px solid #bebebe;
-		background-color: #f6f6f6;
-		@include placeholder {
-			color: red;
-		}
+		border: 1px solid $input_focus_border_color;
+		background-color: $input_focus_bg_color;;
 	}
 	&.input_error {
 		background-color: #fff0f0;

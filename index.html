@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
+
+<!-- Служебная информация для страницы. На сайте не видна -->
 <head>
+	<!-- Кодировка страницы -->
 	<meta charset="utf-8" />
+	<!-- Заголовок страницы -->
 	<title>New project</title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
+	<!-- Для СЕО -->
+	<meta name="keywords" content="" /><!--  -->
+	<meta name="description" content="" /><!--  -->
+	<!-- Включаем возможность адаптации для мобильных устройств, если не нужна, то просто удаляем или комментируем -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+	
+	<!-- Подключаем файл со стилями -->
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
-
+	
+	<!-- Подключаем js скрипты -->
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery.matchHeight.js"></script>
 	<script type="text/javascript" src="js/function.js"></script>
 
 </head>
 
+<!-- Начало видимой части страницы -->
 <body>
 
+<!-- begin wrapper - обертка контента сайта для того чтобы придавить подвал в низу окна браузера пи минимуме контента на странице -->
 <div class="wrapper">
 	
-	<!-- begin header -->
+	<!-- begin шапка сайта -->
 	<header class="header">
 		<div class="container_center">
 
@@ -41,169 +51,19 @@
 			
 		</div>
 	</header>
-	<!-- end header-->
+	<!-- end шапка сайта-->
 	
-	<!-- begin main__content -->
+	<!-- begin основной контент сайта -->
 	<main class="main__content">
 	
-		<div class="container_center">
-
-			<!-- begin breadcrumb -->
-			<ul class="breadcrumb">
-			
-				<li>
-					<a href="#">Page</a>
-				</li>
-				<li>
-					<a href="#">Page</a>
-				</li>
-				<li>
-					<a href="#">Page</a>
-				</li>
-				
-			</ul>
-			<!-- end breadcrumb -->
-			
-			<h3>Colmns</h3>
-			<div class="column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nostrum a, quasi explicabo ratione obcaecati, corrupti omnis eligendi ipsa hic accusantium vitae quo consequatur consequuntur deserunt aliquid. Itaque blanditiis illo omnis id nesciunt nostrum ducimus voluptas debitis natus, possimus atque voluptates. Neque aut fuga quibusdam minima. Repellendus odit, molestias quod earum blanditiis labore delectus et temporibus aliquam distinctio expedita ut eum eligendi alias rerum adipisci illum. Qui, voluptatibus cum laboriosam placeat ullam ipsum veritatis tempora magnam, fuga sint doloribus, fugiat quos iusto sit iste error quia quidem. Cupiditate amet quia illum, consequuntur in sapiente, sunt sint commodi totam quaerat qui repudiandae dolorem quam ratione iure. Adipisci nostrum tempore, omnis nesciunt et labore voluptatibus expedita perspiciatis, fugit assumenda ullam. Ipsa voluptas rerum nihil repellendus temporibus, voluptatibus beatae officiis facilis earum, saepe itaque iure maiores! Aperiam laboriosam nobis mollitia alias sed libero ratione voluptatibus atque, incidunt enim corrupti delectus tempora illo consectetur aliquid tenetur porro sequi, nihil sint accusantium quidem?</div>
-
-			<input type="text" name="" id="" placeholder="Name">
-			
-			<div class="row">
-				<label>Checkbox <input type="checkbox" name="" id=""></label>				
-			</div>
-			
-			<div class="row">			
-				<input type="radio" name="1" id="">
-				<input type="radio" name="1" id="">
-				<input type="radio" name="1" id="">
-			</div>
-			
-			<div class="row">
-				<button class="btn">Button</button>
-				<button class="btn btn__primary">Button</button>
-				<button class="btn btn__danger">Button</button>
-				<button class="btn btn__warning">Button</button>
-			</div>
-
-			<div class="row">
-				<textarea placeholder="Text"></textarea>
-			</div>
-			
-			<h3>Grid</h3>
-			<!-- begin grid  -->
-			<div class="grid grid__3">
-				<div class="grid__wrapper">
-					<div class="grid__item">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde excepturi necessitatibus, rerum dicta quod distinctio.
-					</div>
-				</div>
-				<div class="grid__wrapper">
-					<div class="grid__item">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum voluptas quis quos debitis neque velit cumque beatae porro optio, ex placeat itaque, nesciunt, dolorum. Eligendi veniam, provident minima quam ad corrupti amet eius, atque!
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum voluptas quis quos debitis neque velit cumque beatae porro optio, ex placeat itaque, nesciunt, dolorum. Eligendi veniam, provident minima quam ad corrupti amet eius, atque!
-					</div>
-				</div>
-				<div class="grid__wrapper">
-					<div class="grid__item">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, doloribus!
-					</div>
-				</div>
-				<div class="grid__wrapper">
-					<div class="grid__item">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum voluptas quis quos debitis neque velit cumque beatae porro optio, ex placeat itaque, nesciunt, dolorum. Eligendi veniam, provident minima quam ad corrupti amet eius, atque!
-					</div>
-				</div>
-				<div class="grid__wrapper">
-					<div class="grid__item">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, doloribus!
-					</div>
-				</div>
-			</div>
-			<!-- end grid  -->
-
-			<h3>Grid match</h3>
-			<!-- begin grid  -->
-			<div class="grid grid__4" data-grid-match>
-				<div class="grid__wrapper">
-					<div class="grid__item">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde excepturi necessitatibus, rerum dicta quod distinctio.
-					</div>
-				</div>
-				<div class="grid__wrapper">
-					<div class="grid__item">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum voluptas quis quos debitis neque velit cumque beatae porro optio, ex placeat itaque, nesciunt, dolorum. Eligendi veniam, provident minima quam ad corrupti amet eius, atque!
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum voluptas quis quos debitis neque velit cumque beatae porro optio, ex placeat itaque, nesciunt, dolorum. Eligendi veniam, provident minima quam ad corrupti amet eius, atque!
-					</div>
-				</div>
-				<div class="grid__wrapper">
-					<div class="grid__item">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, doloribus!
-					</div>
-				</div>
-				<div class="grid__wrapper">
-					<div class="grid__item">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum voluptas quis quos debitis neque velit cumque beatae porro optio, ex placeat itaque, nesciunt, dolorum. Eligendi veniam, provident minima quam ad corrupti amet eius, atque!
-					</div>
-				</div>
-				<div class="grid__wrapper">
-					<div class="grid__item">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, doloribus!
-					</div>
-				</div>
-				<div class="grid__wrapper">
-					<div class="grid__item">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde excepturi necessitatibus, rerum dicta quod distinctio.
-					</div>
-				</div>
-				<div class="grid__wrapper">
-					<div class="grid__item">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum voluptas quis quos debitis neque velit cumque beatae porro optio, ex placeat itaque, nesciunt, dolorum. Eligendi veniam, provident minima quam ad corrupti amet eius, atque!
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum voluptas quis quos debitis neque velit cumque beatae porro optio, ex placeat itaque, nesciunt, dolorum. Eligendi veniam, provident minima quam ad corrupti amet eius, atque! 
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>
-				</div>
-			</div>
-			<!-- end grid  -->
-
-			<!-- begin pagination -->
-			<ul class="pagination">
-			
-				<li class="prev">
-					<a href="#"></a>
-				</li>
-				<li>
-					<a href="#">1</a>
-				</li>
-				<li>
-					<a href="#">2</a>
-				</li>
-				<li>
-					<a href="#">3</a>
-				</li>
-				<li class="next">
-					<a href="#"></a>
-				</li>
-				
-			</ul>
-			<!-- end pagination -->
-			
-			
-
-		</div>
 
 	</main>
-	<!-- end main__content -->
+	<!-- end основной контент сайта -->
 
 </div>
 <!-- end .wrapper -->
 
-<!-- begin footer -->
+<!-- begin подвал сайта -->
 <footer class="footer">
 
 	<div class="container_center">
@@ -219,7 +79,7 @@
 	</div>
 
 </footer>
-<!-- end footer -->
+<!-- end подвал сайта -->
 
 
 </body>

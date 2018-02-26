@@ -1,0 +1,14 @@
+.pagination {
+  margin: 25px 0;
+  padding: 0; }
+  .pagination li {
+    display: inline-block; }
+    .pagination li a {
+      display: block;
+      text-align: center; }
+    .pagination li.prev a:before {
+      content: '<'; }
+    .pagination li.next a:before {
+      content: '>'; }
+
+/*# sourceMappingURL=_pagination.css.map */

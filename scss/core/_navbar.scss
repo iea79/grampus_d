@@ -1,0 +1,12 @@
+/* Navbar
+-------------------------------------------------------------------------------*/
+.navbar {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: right;
+	&__item {
+		display: inline-block;
+	}
+	&__link {}
+}
