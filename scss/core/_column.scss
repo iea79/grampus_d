@@ -1,3 +1,7 @@
+// Пример использования миксина для создания многоколоночного текста
+// Тут указаны 3 параметра: 1. количество колонок; 2. отступ между колонками; 3. Минимальная ширина колонки
+// Пример в html. Вставляем в html меняем тут параметры, смотрим что получается
+// <div class="column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nostrum a, quasi explicabo ratione obcaecati, corrupti omnis eligendi ipsa hic accusantium vitae quo consequatur consequuntur deserunt aliquid. Itaque blanditiis illo omnis id nesciunt nostrum ducimus voluptas debitis natus, possimus atque voluptates. Neque aut fuga quibusdam minima. Repellendus odit, molestias quod earum blanditiis labore delectus et temporibus aliquam distinctio expedita ut eum eligendi alias rerum adipisci illum. Qui, voluptatibus cum laboriosam placeat ullam ipsum veritatis tempora magnam, fuga sint doloribus, fugiat quos iusto sit iste error quia quidem. Cupiditate amet quia illum, consequuntur in sapiente, sunt sint commodi totam quaerat qui repudiandae dolorem quam ratione iure. Adipisci nostrum tempore, omnis nesciunt et labore voluptatibus expedita perspiciatis, fugit assumenda ullam. Ipsa voluptas rerum nihil repellendus temporibus, voluptatibus beatae officiis facilis earum, saepe itaque iure maiores! Aperiam laboriosam nobis mollitia alias sed libero ratione voluptatibus atque, incidunt enim corrupti delectus tempora illo consectetur aliquid tenetur porro sequi, nihil sint accusantium quidem?</div>
 .column {
 	@include columns(4, 20px, 300px);
 }

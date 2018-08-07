@@ -1,15 +1,21 @@
 /* Global variables */
 /* ======================================================================== */
+// Переменная для задания основоного шрифта на сайте
 $main_font_family:								"Open Sans";
+// Основной цвет текста на сайте
 $main_color:									#000;
+// Основной line height
 $main_line_height:								1.2;
+// Основной размер шрифта
 $main_font_size:								16px;
 
+// Ширина для container_center
 $container_width:								1200px;
 
+// Высота подвала (если не нужна, можно поставит в auto)
 $footer_height: 								100px;
 
-// Color collection for elements
+// Набор основных цветов для сайта, можно просто перенести в Avocode
 $color_primary:									#7b8287;
 $color_success:									#36a566;
 $color_info:									#03a9f4;
@@ -17,21 +23,30 @@ $color_warning:									#fca33e;
 $color_danger:									#ff1a1a;
 $color_withe:									#ffffff;
 
-$green:											$color_success;
-$yellow:										$color_warning;
-$withe:											$color_withe;
-
+// Благодаря такому набору можно создавать цветовые модификаторы для элементив 
+// Пример использования есть у класса btn
+// Добавляем переменную, внутри набор. Первый параметр название для класса-модификатора, второй - цветовая переменная
 $el-colors: (
-	primary: $color_primary, // color for .element__primary
-	success: $color_success, // color for .element__success
-	info: $color_info, // color for .element__info
-	warning: $color_warning, // color for .element__warning
-	danger: $color_danger, // color for .element__danger
+	primary: $color_primary, // color for .element_primary
+	success: $color_success, // color for .element_success
+	info: $color_info, // color for .element_info
+	warning: $color_warning, // color for .element_warning
+	danger: $color_danger, // color for .element_danger
 );
+// Пример для создания текстов разного цвета:
+.txt {
+	@each $status_el, $color in $el_colors {
+		&_#{$status_el} {
+			color: $color;
+		}
+	}	
+}
+// Дальше чтобы использовать например цвет $color_primary для текста достаточно в html добавить класс txt_primary
 
 
 /* Grid */
 /* ======================================================================== */
+// Отступ по умолчанию между элементами сетки
 $grid_padding:									20px;
 
 
@@ -39,6 +54,7 @@ $grid_padding:									20px;
 /* ======================================================================== */
 // Input variables
 
+// Перменные для элементов форм
 // Input color
 $input_color:									$main_color;
 $input_bg_color:								#fff;
@@ -76,13 +92,15 @@ $btn_contrast_text_color:                       $color_withe;
 $btn_default_bg_color_hover:					#ccc;
 
 
-
+// Переменные для адаптации, почти не использую. Перешел на сниппет.
 /* Breakpoints */ 
+// Для max-width
 $breakpoint-small:                               480px !default;
 $breakpoint-medium:                              760px !default;
 $breakpoint-large:                               960px !default;
 $breakpoint-xlarge:                              1200px !default;
 
+// Для min-width
 $breakpoint-mini-max:                            ($breakpoint-small - 1) !default;
 $breakpoint-small-max:                           ($breakpoint-medium - 1) !default;
 $breakpoint-medium-max:                          ($breakpoint-large - 1) !default;
